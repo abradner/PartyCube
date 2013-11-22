@@ -1,5 +1,3 @@
-#define DEBUG
-
 #define WHITE 0xF7E01F
 
 #define RED 0xF720DF
