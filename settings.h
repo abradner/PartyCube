@@ -1,5 +1,5 @@
 // Serial Debug output
-//#define DEBUG
+#define DEBUG
 
 //We can't get any more 'on' than 'on'.
 #define MAX_BRIGHTNESS 255
@@ -13,4 +13,4 @@
 #define B_PIN 4 
 
 // How long in ms a light should last
-#define LIGHT_DECAY 2000.0
+#define LIGHT_DECAY 500.0
