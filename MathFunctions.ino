@@ -3,11 +3,21 @@
 // x[0] is the initial value of x at t[0]
 // λ is the decay rate
 // t is the current time after t[0]
+
 float exp_decay(float x0, float lambda, int t){
-  return (x0 * exp(-1*lambda*t));
+  float val = x0 * exp((float)(-1*t)*lambda);
+  return (val);
 }
 
+float lin_decay(float x0, float lambda, int t){
+  float val = x0 * lambda/t;
+  return (val);
+}
+
+
+
 //TODO inline function
-int t(int t0) {
-  millis() - t0;  
+// dt is the change in time (ie Δt)
+int dt(int tNow, int t0) {
+  return tNow - t0;  
 }

@@ -11,13 +11,14 @@
 #include "settings.h"
 #include "colours.h"
 
-const float lightLambda = 1.0/LIGHT_DECAY;
+const float lightLambda = 1.0/(float)LIGHT_DECAY;
 
 IRrecv irrecv(RECV_PIN);
 decode_results results;
 Colour r;
 Colour g;
 Colour b;
+
 
 void setup()
 {
@@ -30,6 +31,10 @@ void setup()
   r.pin = R_PIN;
   g.pin = G_PIN;
   b.pin = B_PIN;
+
+zero_colour(&r);
+zero_colour(&g);
+zero_colour(&b);
   
   irrecv.enableIRIn(); // Start the receiver
 }
