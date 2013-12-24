@@ -35,7 +35,11 @@ void setup()
 zero_colour(&r);
 zero_colour(&g);
 zero_colour(&b);
-  
+
+update_colour(&r, 255);
+update_colour(&b, 255);
+update_colour(&g, 255);
+
   irrecv.enableIRIn(); // Start the receiver
 }
 
